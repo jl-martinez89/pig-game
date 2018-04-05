@@ -1,4 +1,4 @@
-# pig-game
+# The Pig Game
 Pig is a simple dice game with many rule variations.
 
 # Description
