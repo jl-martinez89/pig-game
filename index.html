@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pig Game</title>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" >
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">The Pig Game</h1>
+      <div id="player-0-panel" class"active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11</div>
+        </div>
+      </div>
+      <div id="player-1-panel" class="">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+      <button class="btn-game btn-menu"><i class="ion-navicon-round"></i>Menu</button>
+      <button class="btn-game btn-roll"><i class="ion-ios-loop"></i>Roll dices</button>
+      <button class="btn-game btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+      <img src="img/dice-2.png" alt="Dice" class="dice" id="dice-0">
+      <img src="img/dice-3.png" alt="Dice" class="dice" id="dice-1">
+      <div class="notif-panel">
+          <p id="turn-player">Player 2 Turn!</p>
+      </div>
+    </div>
+    <div class="wrapper main-panel">
+      <div class="top-panel">
+        <h1 class="title">The Pig Game</h1>
+        <img src="img/pig.png" class="logo" id="pig">
+        <img src="img/dices.png" class="logo" id="dices">
+        <div class="left-panel">
+          <label><i class="ion-ios-person"></i>Player 1</label>
+          <input type="text" placeholder="Player name" class="input-name" id="inputName-0">
+          <label><i class="ion-ios-person"></i>Player 2</label>
+          <input type="text" placeholder="Player name" class="input-name" id="inputName-1">
+        </div>
+        <div class="right-panel">
+          <button class="btn-init btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+          <button class="btn-init btn-resume"><i class="ion-ios-plus-outline"></i>Resume game</button>
+          <label><i class="ion-flag"></i>Winning Score</label>
+          <input type="text" placeholder="Score" class="final-score">
+        </div>
+      </div>
+      <div class="bottom-panel">
+        <h2>Game Rules</h2>
+        <ul>
+          <li>The game has 2 players, playing in rounds.</li>
+          <li>In each turn, a player rolls two dices as many times as he whishes. Each result get added to his ROUND score.</li>
+          <li>BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn.</li>
+          <li>The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn.</li>
+          <li>A player looses his ENTIRE score when he rolls two 1. After that, it's the next player's turn. </li>
+          <li>If a double is rolled, the point total is added to the ROUND score as with any roll but the player is obligated to roll again.</li>
+          <li>The first player to reach 100 points (default) on GLOBAL score wins the game. Use the input field to set a different winning score.</li>
+        </ul>
+      </div>
+    </div>
+    <!--<script src="app.js"></script>--> <!-- No pattern used -->
+    <script src="js/mvc_app.js"></script> <!-- MVC App -->
+  </body>
+</html>
