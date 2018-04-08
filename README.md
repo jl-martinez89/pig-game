@@ -1,5 +1,5 @@
 # The Pig Game
-Pig is a simple dice game with many rule variations.
+Pig is a simple dice game with some rule variations.
 
 # Description
 The objective of Pig game is to score 100 points before the opponent does. The Pig game is played with a single six-sided die but this version two standard dice are rolled.
